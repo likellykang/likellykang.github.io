@@ -1,0 +1,25 @@
+.my-avatar {
+    height: 250px;
+    border-radius: 50%;
+    background-image: url("/src/content/images/avatar.jpg");
+    background-size: 250px 250px;
+}
+
+.my-name {
+    text-align: center;
+    font-size: 35px;
+    padding: 10px 0;
+}
+
+.my-contact {
+    font-size: 18px;
+}
+
+.my-contact > div > div:first-child {
+    width: 90px;
+    padding-right: 5px;
+}
+
+.my-contact > div > div:nth-child(2) {
+    width: calc(100% - 90px);
+}
