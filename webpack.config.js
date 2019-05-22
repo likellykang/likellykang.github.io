@@ -6,8 +6,8 @@ module.exports = {
         'App': path.resolve(__dirname, 'src/scripts/app.jsx'),
     },
     output: {
-      path: path.resolve(__dirname),
-      filename: '[name].js',
+        path: path.resolve(__dirname),
+        filename: '[name]5-22.js',
     },
     module: {
         rules: [

@@ -5,7 +5,6 @@ import Avatar from './Avatar/Avatar.jsx';
 import MyInfo from './MyInfo/MyInfo.jsx';
 import Research from './Research/Research.jsx';
 import Teaching from './Teaching/Teaching.jsx';
-import Experience from './Experience/Experience.jsx';
 import CV from './CV/CV.jsx';
 import './app.css';
 
