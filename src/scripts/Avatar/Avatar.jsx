@@ -28,17 +28,6 @@ export default class Avatar extends React.Component {
                         <div className='inline-top'>Email:</div>
                         <div className='inline-top'>likang@utexas.edu</div>
                     </div>
-                    {/*
-                        <div>
-                            <div className='inline-top'>LinkedIn:</div>
-                            <div className='inline-top'>
-                                <a href='https://www.linkedin.com/in/li-kang-30057946/' style={{
-                                    wordBreak: 'break-all'
-                                }}>https://www.linkedin.com/in/li-kang-30057946/</a>
-                            </div>
-                        </div>
-                    */}
-
                 </div>
             </>
         );

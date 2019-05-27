@@ -21,7 +21,7 @@ export default class CV extends React.Component {
                     fontWeight: 'bold'
                 }}>Li (Kelly) Kang</div>
                 <div className='text-align-center'>2317 Speedway, GDC 7.416b, Austin, TX 78712</div>
-                <div className='text-align-center'>(765)421-5556 likang@utexas.edu</div>
+                <div className='text-align-center'>likang@utexas.edu</div>
                 {/* Education */}
                 <SectionTitle title='EDUCATION' />
                 <SubSectionTitle title='PhD in Statistics and Data Science' date='May 2020' />
