@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 export default class CV extends React.Component {
     constructor(props) {
@@ -13,7 +12,8 @@ export default class CV extends React.Component {
                 margin: '0 auto',
                 padding: 20,
                 border: 'solid 1px #d4d4d4',
-                borderRadius: 4
+                borderRadius: 4,
+                fontFamily: "Trebuchet MS"
             }}>
                 {/* Header */}
                 <div className='text-align-center' style={{
@@ -65,6 +65,13 @@ export default class CV extends React.Component {
                     'Proposed a finite skew mixture model that provides a better characterization of insurance data, and could be easily generalized to other datasets',
                     'Developed a Hierarchical structure to make the statistics model easier to understand',
                     'Performed Bayesian MCMC sampling methods in R to better predict future losses'
+                ]} />
+                {/* Professional EXPERIENCE */}
+                <SectionTitle title='PROFESSIONAL EXPERIENCE' />
+                <SubSectionTitle title='Data Scientist Intern at Microsoft' date='May 2019 - Present' />
+                <BulletPoints points={[
+                    'Worked on Microsoft Windos Defender Advanced Threat Protection.',
+                    'Applied Azure Automated Machien Learning techniques to classify malware.'
                 ]} />
                 {/* HONORS AND AWARDS */}
                 <SectionTitle title='HONORS AND AWARDS' />

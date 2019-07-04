@@ -5,9 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build": "webpack --mode production",
-    "start": "webpack --mode development",
-    "test": "webpack-dev-server",
-    "hotstart": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot"
   },
   "repository": {
     "type": "git",
@@ -29,6 +27,7 @@
     "@babel/preset-react": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-loader": "^8.0.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^2.1.1",
     "file-loader": "^3.0.1",
