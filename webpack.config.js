@@ -7,7 +7,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname),
-        filename: '[name]5-22.js',
+        filename: '[name]7-4.js',
     },
     module: {
         rules: [
