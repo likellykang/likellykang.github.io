@@ -1,0 +1,15 @@
+.cv-container {
+    width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+    border: solid 1px #d4d4d4;
+    border-radius: 4px;
+    font-family: "Trebuchet MS";
+    max-width: 1024px;
+}
+
+@media screen and (max-width: 1024px) {
+    .cv-container {
+        padding: 10px;
+    }
+}

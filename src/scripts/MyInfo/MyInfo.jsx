@@ -13,7 +13,7 @@ export default class MyInfo extends React.Component {
         };
 
         return (
-            <div style={{ padding: 30 }}>
+            <div>
                 <div className='orange-text' style={titleStyle}>My Info</div>
                 <div>
                     I am a PhD student at the University of Texas at Austin majoring in Statistics and Data Science.

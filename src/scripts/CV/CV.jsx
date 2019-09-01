@@ -1,4 +1,5 @@
 import React from 'react';
+import './cv.css';
 
 export default class CV extends React.Component {
     constructor(props) {
@@ -7,14 +8,7 @@ export default class CV extends React.Component {
 
     render() {
         return (
-            <div style={{
-                width: 740,
-                margin: '0 auto',
-                padding: 20,
-                border: 'solid 1px #d4d4d4',
-                borderRadius: 4,
-                fontFamily: "Trebuchet MS"
-            }}>
+            <div className='cv-container'>
                 {/* Header */}
                 <div className='text-align-center' style={{
                     fontSize: '24px',
@@ -40,7 +34,7 @@ export default class CV extends React.Component {
                     'Designed course materials including lecture notes, study problems and exams',
                     'Measured students’ study performance through in-class activities'
                 ]} />
-                <SubSectionTitle title='Teaching Assistant' date='Aug 2015 – present' />
+                <SubSectionTitle title='Teaching Assistant' date='Aug 2015 - present' />
                 <div>Department of Statistics and Data Science, UT Austin</div>
                 <BulletPoints points={[
                     'Taught lab sessions for R and Microsoft Excel',
@@ -55,12 +49,12 @@ export default class CV extends React.Component {
                     'Performed linear regression, dynamic linear model, and GARCH model on S&P 500 Index data',
                     'Performed simulation analysis using the techniques of Subsampling'
                 ]} />
-                <SubSectionTitle title='Multivariate generalization on Gamma mixture of Uniforms' date='May 2018 – Present' />
+                <SubSectionTitle title='Multivariate generalization on Gamma mixture of Uniforms' date='May 2018 - Present' />
                 <BulletPoints points={[
                     'Used Copulas to capture the dependence of multi-dimensional skewed and heavy tailed data',
                     'Performed Bayesian MCMC sampling methods to estimate the parameters with uncertainty included'
                 ]} />
-                <SubSectionTitle title='Bayesian skew mixture models for loss distribution' date='May 2018 – Present' />
+                <SubSectionTitle title='Bayesian skew mixture models for loss distribution' date='May 2018 - Present' />
                 <BulletPoints points={[
                     'Proposed a finite skew mixture model that provides a better characterization of insurance data, and could be easily generalized to other datasets',
                     'Developed a Hierarchical structure to make the statistics model easier to understand',
@@ -75,16 +69,14 @@ export default class CV extends React.Component {
                 ]} />
                 {/* HONORS AND AWARDS */}
                 <SectionTitle title='HONORS AND AWARDS' />
+
+                <SubSectionTitle title='University of Texas at Austin'/>
                 <SubSectionTitle title='SBSS Student Paper Competition winner' date='2019' noBold={true} />
-
                 <SubSectionTitle title='McCombs School of Business Fellowship for Research Excellence' date='2017 - 2018' noBold={true} />
-                <SimpleDescription text='University of Texas at Austin' />
 
+                <SubSectionTitle title='Purdue University, West Lafayette, IN' />
                 <SubSectionTitle title='Outstanding Junior in College of Science' date='2014' noBold={true} />
-                <SimpleDescription text='Purdue University, West Lafayette, IN' />
-
                 <SubSectionTitle title='Dean’s List and Semester Honors' date='2011 - 2015' noBold={true} />
-                <SimpleDescription text='Purdue University, West Lafayette, IN' />
                 {/* REFERENCES */}
                 <SectionTitle title='REFERENCES' />
                 <SubSectionTitle title='Stephen Walker, Professor and Graduate Advisor' />
@@ -122,9 +114,20 @@ function SectionTitle(props) {
 
 function SubSectionTitle(props) {
     const { title = '', date = '', noBold } = props;
-    const subSectionTitleStyle = { fontSize: '16px', marginTop: 5, fontWeight: noBold ? 'normal' : 'bold' };
-    const subSectionTitleLeftStyle = { fontStyle: 'italic', width: 'calc(100% - 170px)' };
-    const subSectionTitleRightStyle = { width: 170 };
+    const subSectionTitleStyle = {
+        fontSize: '16px',
+        marginTop: 5,
+        fontWeight: noBold ? 'normal' : 'bold'
+    };
+    const subSectionTitleLeftStyle = {
+        fontStyle: 'italic',
+        width: date ?
+            ~date.indexOf('-') ? 'calc(100% - 170px)' : 'calc(100% - 90px)'
+            : '100%'
+    };
+    const subSectionTitleRightStyle = {
+        width: date ? ~date.indexOf('-') ? 170 : 90 : 0
+    };
 
     return (
         <div style={subSectionTitleStyle}>

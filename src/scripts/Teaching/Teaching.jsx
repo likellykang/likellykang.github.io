@@ -13,7 +13,7 @@ export default class Teaching extends React.Component {
         };
 
         return (
-            <div style={{ padding: 30 }}>
+            <div>
                 <div className='orange-text' style={titleStyle}>Assistant Instructor:</div>
                 <Entry text='Fall 2017: SDS 302 - Data Analysis for the Health Science' />
                 <div className='orange-text' style={{ marginTop: 40, ...titleStyle }}>Teaching Assistant:</div>

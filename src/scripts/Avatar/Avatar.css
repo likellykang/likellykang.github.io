@@ -1,8 +1,13 @@
 .my-avatar {
+    width: 250px;
     height: 250px;
     border-radius: 50%;
     background-image: url("/src/content/images/avatar.jpg");
-    background-size: 250px 250px;
+    background-size: 100% 100%;
+}
+
+.my-info {
+    width: 100%;
 }
 
 .my-name {
@@ -22,4 +27,27 @@
 
 .my-contact > div > div:nth-child(2) {
     width: calc(100% - 90px);
+}
+
+@media screen and (max-width: 1024px) {
+    .my-avatar {
+        width: 100px;
+        height: 100px;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+
+    .my-info {
+        width: calc(100% - 150px);
+        margin-bottom: 20px;
+    }
+
+    .my-name {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .my-contact {
+        font-size: 14px;
+    }
 }

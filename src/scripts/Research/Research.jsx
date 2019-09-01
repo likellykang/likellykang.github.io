@@ -19,7 +19,7 @@ export default class Research extends React.Component {
         };
 
         return (
-            <div style={{ padding: 30 }}>
+            <div>
                 <div className='orange-text' style={titleStyle}>Working Paper:</div>
                 <div style={paperStyle}>
                     <i style={paperTitleStyle}> “A new class of unimodal, asymmetric, heavy-tailed densities with applications to regression and time-series models” </i>
