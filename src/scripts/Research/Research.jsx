@@ -1,12 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import './research.css';
 
 export default class Research extends React.Component {
     constructor(props){
         super(props);
+        this.state = {
+            showSkewPaper: false
+        };
     }
 
     render() {
+        const { showSkewPaper } = this.state;
         const titleStyle = {
             fontSize: '24px',
             marginBottom: 20
@@ -15,16 +19,26 @@ export default class Research extends React.Component {
             marginBottom: 20
         };
         const paperTitleStyle = {
-            fontSize: '20px'
+            fontSize: '20px',
         };
 
         return (
-            <div>
+            <div style={{ height: '100%' }}>
                 <div className='orange-text' style={titleStyle}>Working Paper:</div>
                 <div style={paperStyle}>
-                    <i style={paperTitleStyle}> “A new class of unimodal, asymmetric, heavy-tailed densities with applications to regression and time-series models” </i>
-                    <div>Li Kang, Stephen Walker, and Paul Damien.</div>
+                    <i style={{
+                        ...paperTitleStyle,
+                        textDecoration: 'underline'
+                    }} className='clickable-link' onClick={() => this.setState({ showSkewPaper: !showSkewPaper })}>
+                        “On a transform for modeling skewness”
+                    </i>
+                    <div>
+                        <span></span>Li Kang, Stephen Walker, and Paul Damien.</div>
                 </div>
+                {showSkewPaper &&
+                    <iframe className='paper-iframe' src='/src/content/files/On a transform for modeling skewness_Li Kang.pdf'>
+                    </iframe>
+                }
                 <div style={paperStyle}>
                     <i style={paperTitleStyle}> “Multivariate generalization on Gamma mixture of Uniforms” </i>
                     <div>Li Kang, Stephen Walker, and Paul Damien.</div>

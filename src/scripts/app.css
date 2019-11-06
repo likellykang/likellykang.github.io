@@ -95,6 +95,14 @@ a:hover {
     color: rgb(191, 87, 0);
 }
 
+.clickable-link {
+    cursor: pointer;
+}
+
+    .clickable-link:hover {
+        color: rgb(191, 87, 0);
+    }
+
 @media screen and (max-width: 1024px) {
     .main-container .nav-container {
         background-size: 350px 60px;
