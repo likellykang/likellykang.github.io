@@ -33,7 +33,7 @@ export default class Research extends React.Component {
                         “On a transform for modeling skewness”
                     </i>
                     <div>
-                        <span></span>Li Kang, Stephen Walker, and Paul Damien.</div>
+                        <span></span>Li Kang, Paul Damien and Stephen Walker.</div>
                 </div>
                 {showSkewPaper &&
                     <iframe className='paper-iframe' src='/src/content/files/On a transform for modeling skewness_Li Kang.pdf'>
@@ -41,7 +41,7 @@ export default class Research extends React.Component {
                 }
                 <div style={paperStyle}>
                     <i style={paperTitleStyle}> “Multivariate generalization on Gamma mixture of Uniforms” </i>
-                    <div>Li Kang, Stephen Walker, and Paul Damien.</div>
+                    <div>Li Kang, Stephen Walker and Paul Damien.</div>
                 </div>
             </div>
         );
